@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Post from './Post';
+import InstaService from '../services/instaService';
 
 
 export default class Posts extends Component {
+
+    InstaService = new InstaService();
+
     render() {
         return (
             <div className="left" >
-                <Post src="https://render.fineartamerica.com/images/rendered/default/poster/10/8/break/images/artworkimages/medium/1/the-dark-rose-daniel-arrhakis.jpg" alt ="dark" />
-                <Post src ="https://ludaflower.com/wp-content/uploads/2018/06/CYO-whiterose1.jpg" alt="white"/>
+
             </div>
         )
     }
