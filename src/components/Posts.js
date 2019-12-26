@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InstaService from '../services/instaService';
 import User from './User';
+import errorMessage from './Error';
 
 
 export default class Posts extends Component {
@@ -54,6 +55,11 @@ export default class Posts extends Component {
     }
     render() {
         const { error, posts } = this.state;
+        if(error){
+            return(
+                <errorMessage/>
+            )
+        }
         const items = this.renderItems(posts);
         return (
             <div className="left" >
