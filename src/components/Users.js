@@ -1,30 +1,37 @@
 import React from 'react';
 import User from './User';
 
-export default function Users ()  {
-    return (
+import photo from './photo.jpg';
+
+export default function Users() {
+  return (
     <div className="right">
-        <User src="https://www.parimatch.ru/ufc/upload/ufc/fighters/dan-henderson/headshot.png?1572513150"
-            alt="man"
-            name="Dan"
+      <User
+        src={photo}
+        alt="man"
+        name="Dan"
+      />
+      <div className="users__block">
+
+        <User
+          src={photo}
+          alt="man"
+          name="Dan"
+          min
         />
-        <div className="users__block">
-
-            <User src="https://www.parimatch.ru/ufc/upload/ufc/fighters/dan-henderson/headshot.png?1572513150"
-                alt="man"
-                name="Dan"
-                min />
-            <User src="https://www.parimatch.ru/ufc/upload/ufc/fighters/dan-henderson/headshot.png?1572513150"
-                alt="man"
-                name="Dan"
-                min />
-            <User src="https://www.parimatch.ru/ufc/upload/ufc/fighters/dan-henderson/headshot.png?1572513150"
-                alt="man"
-                name="Dan"
-                min />
-        </div>
-    </div>)
+        <User
+          src={photo}
+          alt="man"
+          name="Dan"
+          min
+        />
+        <User
+          src={photo}
+          alt="man"
+          name="Dan"
+          min
+        />
+      </div>
+    </div>
+  );
 }
-
-
-
