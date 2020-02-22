@@ -1,17 +1,19 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 import React, { Component } from 'react';
 import User from './User';
-import photo3 from '../logo.svg';
+
+import photo from './phot.png';
 
 export default class Post extends Component {
   render() {
     return (
       <div className="post">
         <User
-          src={photo3}
+          src={photo}
           alt="man"
           name="Dan"
           min

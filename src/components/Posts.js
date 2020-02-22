@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 import InstaService from '../services/instaService';
 import User from './User';
-import errorMessage from './Error';
+import errorMessage from './Error/Error';
 
 
 export default class Posts extends Component {
