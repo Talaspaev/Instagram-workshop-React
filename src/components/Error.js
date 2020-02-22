@@ -1,7 +1,7 @@
 import React from 'react';
-import img from '../error.png';
+import error from '../error.png';
 
 const errorMessage = () => (
-  <img src={img} alt="error" />
+  <img src={error} alt={error} />
 );
 export default errorMessage;
